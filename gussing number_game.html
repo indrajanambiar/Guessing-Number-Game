@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        h1{
+            color: palevioletred;
+            font-family: fantasy;
+            font-size:xx-large;
+            
+        }
+    </style>
+</head>
+<body>
+	<h1><strong>Guessing Game</strong></h1>
+	
+	<p>Guess a number between 1 and 100:</p>
+	<input type="number" id="guess" placeholder="Enter your guess">
+	<button id="guessButton" onclick="checkGuess()">Guess</button>
+	
+	<p id="output"></p>
+	
+	<p id="guesses"></p>
+	
+	<button onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
